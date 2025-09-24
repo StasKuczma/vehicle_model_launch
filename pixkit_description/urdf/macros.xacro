@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:macro name="vehicle_info" value="${xacro.load_yaml('$(find pixkit_description)/config/vehicle_info.param.yaml')}"/>
+    <xacro:macro name="pixkit" value="${xacro.load_yaml('$(find pixkit_description)/config/vehicle_info.param.yaml')}"/>
 
 
-    <xacro:macro name="base_link" params="name">
-        <link name="base_link">
-            <visual>
-            <origin xyz="-0.25 0.0 0.1" rpy="0 0 ${pi/2.0}"/>
-            <geometry>
-                <mesh filename="package://pixkit_description/mesh/hooke.dae" scale="0.001 0.001 0.001"/>
-            </geometry>
-            </visual>
-        </link>
-    </xacro:macro>
+    <link name="base_link">
+      <visual>
+        <origin xyz="-0.25 0.0 0.1" rpy="0 0 ${pi/2.0}"/>
+        <geometry>
+          <mesh filename="package://pixkit_description/mesh/hooke.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+    </link>
 
-  
+
   </xacro:macro>
+
+
 
 </robot>
