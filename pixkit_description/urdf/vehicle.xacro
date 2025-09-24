@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="pixkit_vehicle">
 
   <!-- load parameter -->
   <xacro:property name="vehicle_info" value="${xacro.load_yaml('$(find pixkit_description)/config/vehicle_info.param.yaml')}"/>
