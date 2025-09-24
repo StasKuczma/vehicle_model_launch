@@ -25,7 +25,7 @@
       <visual>
       <origin xyz="-0.25 0.0 0.1" rpy="0 0 ${pi/2.0}"/>
         <geometry>
-          <mesh filename="/home/stask/autoware_data/pixkit_launch/pixkit_description/mesh/hooke.dae"/>
+          <mesh filename="package://pixkit_description/mesh/hooke.dae"/>
         </geometry>
       </visual>
       <collision>
